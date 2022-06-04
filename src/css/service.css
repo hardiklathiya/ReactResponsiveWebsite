@@ -1,0 +1,20 @@
+body{
+    background-color: #03031d;
+}
+.heading{
+    position: relative;
+}
+.heading h1{
+    font-size: 30px;
+
+}
+.heading h1::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+    width: 5%;
+    height: 2px;
+    background-color: white;
+}

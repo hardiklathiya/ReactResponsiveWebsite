@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mulish:wght@300;400;600&family=Open+Sans:wght@500&family=Poppins:wght@300;400;500&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+heading_div{
+  position: relative;
+}
+.heading{
+
+  font-family: 'Mulish', sans-serif;
+}
+.heading::after{
+  position: absolute;
+  content: '';
+  width: 5%;
+  height: 2px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30%;
+}
+label{
+  color: white;
+}
+.contact_div .input_style{
+  background-color: #09092a;
+  color: white;
+}
+input::placeholder{
+  color: white;
+}
+.contact_div .input_style:focus{
+  background-color:transparent ;
+  color: white;
 }

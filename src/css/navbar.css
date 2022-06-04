@@ -1,0 +1,87 @@
+* {
+    outline: none;
+}
+
+.myNav {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #000000 0%, #000066 200%);
+    padding-right: 80px;
+    flex-wrap: nowrap;
+}
+
+.myNav .menu {
+    display: block;
+}
+
+.myNav .menu .non-active {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    margin: 0 5px;
+    margin-top: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.menu .active {
+    text-decoration: none;
+    font-size: 18px;
+
+    color: rosybrown;
+    padding: 5px 20px;
+    margin: 0 5px;
+    margin-top: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.menu .non-active:hover,
+.menu .active:hover {
+    color: royalblue;
+    margin-top: 5px;
+}
+.menu .non-active::before,.menu .active::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    visibility: hidden;
+    background-color: yellow;
+    left: 20%;
+    transition: 0.4s;
+    bottom: 0%;
+}
+.menu .non-active:hover::before,.menu .active:hover::before{
+    width: 60%;
+    visibility: visible;
+}
+@media (max-width:600px) {
+    .myNav {
+        height: 150px;
+    }
+
+    .myNav .logo img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15%;
+    }
+    .menu{
+        display: block;
+        margin-left: -30px;
+        margin-top: 70px;
+    }
+    .myNav .menu .non-active,.menu .active{
+        padding: 10px;
+    }
+   
+}
